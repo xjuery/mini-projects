@@ -1,0 +1,8 @@
+[id="{app-name-lc}-plugin-common-parameters"]
+==== Common Configuration parameters
+
+[cols="<,<,<",options="header",]
+|=======================================================================
+|Setting |Input type|Required
+| when | text script | No
+|=======================================================================

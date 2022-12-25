@@ -1,0 +1,90 @@
+// COMPONENT VARIABLES
+:name: TestComponent
+:name-lc: testcomponent
+:type: ComponentType
+:type-lc: componenttype
+
+include::./global-variables.asciidoc[]
+
+// //////////////////////////////////////////////////
+//   TITLE
+
+[id="{app-name-lc}-{type-lc}-{name-lc}"]
+
+== {name} {type}
+
+&nbsp;
+
+[%rotate]
+|===
+|*{app-name-normal} Version* |*Documentation Release date*
+
+|{version}
+|{release-date}
+|===
+
+// //////////////////////////////////////////////////
+//   DESCRIPTION
+
+=== Description
+
+DESCRIPTION
+
+// //////////////////////////////////////////////////
+//   LIST OF CONFIGURATION EXAMPLES
+
+[id="{app-name-lc}-{type-lc}-{name-lc}-examples"]
+=== Configuration examples
+
+LOREM IPSUM
+
+Example:
+
+[source,yaml]
+-----
+test:
+  field1: value1
+  field2: value2
+-----
+
+
+// //////////////////////////////////////////////////
+//   LIST OF PARAMETERS
+
+[id="{app-name-lc}-{type-lc}-{name-lc}-parameters"]
+=== Configuration parameters
+
+This plugin supports the following configuration parameters plus the common parameters described later.
+
+[cols="<,<,<",options="header",]
+|=======================================================================
+|Setting |Input type|Required
+| <<{app-name-lc}-{type-lc}-{name-lc}-param1>> |Integer|No
+|=======================================================================
+
+
+&nbsp;
+
+// //////////////////////////////////////////////////
+//   PARAMETERS DESCRIPTION
+
+[id="{app-name-lc}-{type-lc}-{name-lc}-param1"]
+=== `param1`
+
+  * Value type is Integer
+  * Default value: defaultvalue
+
+LOREMP IPSUM
+
+Example:
+[source,yaml]
+-----
+test:
+  field1: value1
+  field2: value2
+-----
+
+// //////////////////////////////////////////////////
+//   COMMON PARAMETERS
+
+include::{plugin-common-parameters}[]
