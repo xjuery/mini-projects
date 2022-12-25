@@ -1,0 +1,11 @@
+// GLOBAL VARIABLES
+:toc: left
+:source-highlighter: pygments
+:app-name-lc: myapp
+:app-name-normal: MyApp
+:application: ./application.asciidoc
+:plugin-common-parameters: ./plugin-common-parameters.asciidoc
+
+// Application Variables
+:version: 1.0.1
+:release-date: 2022-12-23
