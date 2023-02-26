@@ -1,0 +1,24 @@
+//as-split-gutter {
+//  height: 100% !important;
+//}
+
+#drawFlowDiv {
+  height: 100% !important;
+}
+
+footer {
+  //margin-top: 8px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: cornflowerblue;
+  bottom: 0;
+  width: 100%;
+  //height: 25px;
+  line-height: 25px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
