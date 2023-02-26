@@ -4,11 +4,12 @@
   direction="horizontal"
   gutterAriaLabel="adjustable divider between two views"
   #split="asSplit"
+  (dragEnd)="dragEnd('percent', $event)"
 >
-  <as-split-area [size]="sizes.percent.area1" #area1="asSplitArea">
-    <div id="drawFlowDiv" #drawFlowDiv></div>
+  <as-split-area #area1="asSplitArea">
+    <div id="drawFlowDiv" #drawFlowDiv ></div>
   </as-split-area>
-  <as-split-area [size]="sizes.percent.area2" #area2="asSplitArea">
+  <as-split-area #area2="asSplitArea">
     <p>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
       rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt

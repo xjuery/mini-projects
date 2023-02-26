@@ -4,6 +4,15 @@
 
 #drawFlowDiv {
   height: 100% !important;
+  overflow: auto;
+}
+
+.drawflow .connection {
+  transform: initial;
+}
+
+.drawflow .connection .main-path {
+  transform: initial;
 }
 
 footer {
