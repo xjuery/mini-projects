@@ -10,6 +10,7 @@ import { BledComponent } from './bled/bled.component';
 import { ScredComponent } from './scred/scred.component';
 import {AngularSplitModule} from "angular-split";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
         BrowserAnimationsModule,
         NgbModule,
         AngularSplitModule,
-        MatSidenavModule
+        MatSidenavModule,
+      MatMenuModule
     ],
   providers: [],
   bootstrap: [AppComponent]

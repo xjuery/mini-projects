@@ -2,6 +2,7 @@ import {AfterViewInit, Component, Inject, ElementRef, ViewChild} from '@angular/
 import {DOCUMENT} from '@angular/common';
 
 import Drawflow from 'drawflow'
+import {IOutputData} from "angular-split";
 
 @Component({
   selector: 'app-bled',
@@ -11,6 +12,13 @@ import Drawflow from 'drawflow'
 export class BledComponent implements AfterViewInit {
   @ViewChild('drawFlowDiv', {static: false}) drawFlowDiv: ElementRef | undefined;
   editor: Drawflow | undefined;
+
+  editorArea: number = 70;
+  previewArea: number = 30;
+  folded: boolean = false;
+  dblClickTime = 500;
+
+  errorMessage: string = "There is an error";
 
   ngAfterViewInit(): void {
     //@ts-ignore
@@ -204,12 +212,13 @@ export class BledComponent implements AfterViewInit {
     this.editor.import(dataToImport);
   }
 
-  dragEnd(unit: string, {sizes}: any) {
-    //this.editorwidth=this.splitarea1width;
-    // if (unit === 'percent') {
-    //   this.sizes.percent.area1 = sizes[0]
-    //   this.sizes.percent.area2 = sizes[1]
-    //
-    // }
+  gutterDblClick(e: any) {
+    if(this.folded) {
+      this.editorArea = 70;
+    } else {
+      this.editorArea = 100;
+    }
+    this.previewArea = 100 - this.editorArea;
+    this.folded = !this.folded;
   }
 }

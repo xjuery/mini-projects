@@ -31,3 +31,22 @@ footer a {
   display: flex;
   align-items: center;
 }
+
+.footerLeft {
+  padding-left: 10px;
+}
+
+.footerLeft img {
+  height: 24px;
+  width: 24px;
+}
+
+.footerLeft button {
+  background-color: cornflowerblue;
+  border: none;
+}
+
+.footerLeftOverlay {
+  height: 250px !important;
+  width: 250px!important;
+}
